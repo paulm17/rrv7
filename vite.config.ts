@@ -27,12 +27,14 @@ export default defineConfig({
     tsconfigPaths(),
   ],
   optimizeDeps: {
-    include: ['prop-types', 'react-is'],
+    include: ['prop-types', 'react-is', 'hoist-non-react-statics', 'html-react-parser'],
   },
   resolve: {
     alias: {
       'prop-types': 'prop-types/prop-types.js',
       'react-is': 'react-is/cjs/react-is.development.js',
+      'hoist-non-react-statics': 'node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js',
+      'html-react-parser': 'node_modules/html-react-parser/lib/index.js'
     },
   }, 
   ssr: {

@@ -1,12 +1,12 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration } from "react-router";
 import { RaikouProvider } from '@raikou/system';
-import { emotionTransform, RaikouEmotionProvider } from "@raikou/emotion";
 
 import appStylesHref from "./app.css?url";
 import * as Route from "./+types.root";
 
 import '@raikou/system/styles.css';
 import '@stylefusion/react/styles.css';
+import { RaikouEmotionProvider } from "@raikou/emotion";
 
 export const links = () => [{ rel: "stylesheet", href: appStylesHref }];
 
@@ -18,7 +18,7 @@ export default function App({ loaderData }: Route.ComponentProps) {
         <Links />
       </head>
       <body>
-        <RaikouProvider stylesTransform={emotionTransform}>
+        <RaikouProvider>
           <RaikouEmotionProvider>
             <Outlet />
           </RaikouEmotionProvider>
