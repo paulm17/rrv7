@@ -19,7 +19,7 @@ export default defineConfig({
       atomic: false,
       theme,
       rawTheme,
-      transformLibraries: ['@raikou/core', '@raikou/system'],
+      transformLibraries: ['@raikou/core', '@raikou/system', '@raikou/emotion'],
     }),
     reactRouter({
       prerender: ["/about"],
@@ -36,6 +36,6 @@ export default defineConfig({
     },
   }, 
   ssr: {
-    noExternal: ['@stylefusion/react', '@raikou/core', '@raikou/system'],
+    noExternal: ['@stylefusion/react', '@raikou/core', '@raikou/system', '@raikou/emotion'],
   }
 });
