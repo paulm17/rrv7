@@ -6,7 +6,7 @@ import * as Route from "./+types.root";
 
 import '@raikou/system/styles.css';
 import '@stylefusion/react/styles.css';
-import { RaikouEmotionProvider } from "@raikou/emotion";
+import { emotionTransform, RaikouEmotionProvider } from "@raikou/emotion";
 
 export const links = () => [{ rel: "stylesheet", href: appStylesHref }];
 
@@ -18,7 +18,7 @@ export default function App({ loaderData }: Route.ComponentProps) {
         <Links />
       </head>
       <body>
-        <RaikouProvider>
+        <RaikouProvider stylesTransform={emotionTransform}>
           <RaikouEmotionProvider>
             <Outlet />
           </RaikouEmotionProvider>

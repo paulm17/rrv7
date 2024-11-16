@@ -9,10 +9,10 @@
     "typegen:watch": "react-router typegen --watch"
   },
   "dependencies": {
-    "@raikou/core": "^0.0.17",
-    "@raikou/emotion": "^0.0.17",
-    "@raikou/hooks": "^0.0.17",
-    "@raikou/system": "^0.0.17",
+    "@raikou/core": "^0.0.18",
+    "@raikou/emotion": "^0.0.18",
+    "@raikou/hooks": "^0.0.18",
+    "@raikou/system": "^0.0.18",
     "@react-router/node": "7.0.0-pre.5",
     "@react-router/serve": "7.0.0-pre.5",
     "isbot": "^4.1.0",
